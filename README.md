@@ -3,12 +3,21 @@
 This workspace executes the suction grasping pipeline using **Suctionnet**.
 
 ### Prerequisites
-- Please replace the provided **inference.py** in /suctionnet-baseline/neural_network
-- Download **realsense-deeplabplus-RGBD** pretrained model of suctionnet and place it inside /suctionnet-baseline/neural_network/example_data/
-- Edit **inference_command.sh** file to match your parameters.
-- Here we use two relays: 
-    - first one is for activating the suction gripper which is in serial connection with air flow to the suction gripper to turn on and off the supply.
-    - second one is for data collection and it will be described under data collection pipeline
+
+Before running the suction grasping pipeline, complete the following steps:
+
+- Replace the provided `inference.py` file in:
+  ```bash
+  /suctionnet-baseline/neural_network
+  ```
+- Download [realsense-deeplabplus-RGBD](https://drive.google.com/file/d/18TbctdhpNXEKLYDWFzI9cT1Wnhe-tn9h/view) pretrained model of suctionnet and place it inside
+  ```bash  
+  /suctionnet-baseline/neural_network/example_data/
+  ```
+- Edit **inference_command.sh** file located in /suctionnet_benchmark_ws/suction_grasp/suction_grasp according to your system parameters.
+- This setup uses two relay modules:
+    - **Relay 1**: Controls the suction gripper by turning the air supply on and off through serial communication.
+    - **Relay 2**: Supports the data collection process. This is described in the data collection pipeline section.
 
 ---
 
