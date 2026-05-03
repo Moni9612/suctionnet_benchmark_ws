@@ -62,3 +62,5 @@ ros2 run sensor_control sensor_control
   main_suction.cpp
   ```
 
+  > **Note:** Ensure the Arduino is connected to the correct serial port (e.g., /dev/ttyACM0) before running this step.
+
