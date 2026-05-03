@@ -16,9 +16,8 @@ Before running the suction grasping pipeline, complete the following steps:
   ```
 - Edit **inference_command.sh** file located in /suctionnet_benchmark_ws/suction_grasp/suction_grasp according to your system parameters.
 - This setup uses two relay modules:
-    - **Relay 1**: Controls the suction gripper by turning the air supply on and off through serial communication.
-    - **Relay 2**: Supports the data collection process. This is described in the data collection pipeline section.
-
+    - **Relay 1**: Should be in serial connection with air flow to the suction gripper to turn on and off the air supply.
+    - **Relay 2**: Should be in serial connection with the vaccum sensor to collect air pressure data. This is described in step 3.
 ---
 
 ### Build the workspace
